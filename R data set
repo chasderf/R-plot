@@ -1,0 +1,66 @@
+Data set
+
+A data set is a colleciton of data, often presented in a table
+
+There is popular built in data set in R called “mtcars” (Motor Trend Car Road Tests), which is
+retrieved from the 1974 motor Trend US magazine
+
+In the examples below ( and for the next chapters ), we will sue the mtcars data set, for statistical
+purposes
+
+Mtcars
+
+Information about the data set
+
+You can use the question mark ( ? ) to get information about the mtcars data set
+
+?mtcars
+
+Get information
+
+Use the dim( ) function to find the dimensions of the data set, and the names ( ) function to view the
+names of the variables :
+
+Data_cars <- mtcars
+Rownames (Data_Cars)
+
+From the ex. Above we just gain lists and vectors from the back-end and cloud allocation
+
+Print variable values
+If you want to print all values that belong to a variable , access the data frame by using the $ sign,
+and the name of the variable ( for example cyl cylinder)
+
+Data_Cars <- mtcars
+Data_Car$cyl
+This practically
+
+Sort variable values
+To sort the values use the sort ( ) function
+
+Data_Cars <- mtcars
+Sort ( Data_Cars$cyl)
+
+//OUPUT
+This just lists how many cylinders occur
+
+Analyze the data
+Now that we have some information about the data set, we can start to analyze it with some
+statistical numbers
+
+For example, we can use the summary ( ) function to get a statiscal summary of the data
+
+Data_Cars <- mtcars
+
+Summary(Data_Cars)
+
+Don’t worry if you do not understand the outpu Numbers. You will master them shortly
+
+The summary( ) function returns 6 statistical numbers for each variable:
+
+Min
+
+First quantile (percentile)
+Median
+Mean
+Third quantile ( percentile )
+Max
