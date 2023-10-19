@@ -1,0 +1,52 @@
+In statistics, there are often three values that interest us
+
+Mean - the average value
+Median - the middle value
+Mode - the most common value
+
+Mean
+To calculate the average value (mean) of a variable from the mtcars data set, find the sum of all
+values, and divide the sum by the number of values
+
+Mean ( ) function gets the mean value
+WT is the average weight
+
+//INPUT
+Data_Cars <- mtcars
+Mean( Data_Cars$wt)
+//OUTPUT::
+[1] 3.21
+
+R median
+
+The median value is the value in the middle, after you have sorted all the values
+
+If we take a look at the values of the wt variable (from the mtcars data set), we will see that there are
+two numbers in the middle)
+
+Note: if there are two numbers in the middle, you must divide the sum of those numbers by two, to
+find the median
+
+Luckily R has a function that does all of that for you, just use the median ( ) function to find the
+middle value
+
+//INPUT
+Data_Cars <- mtcars
+Median(Data_Cars$wt)
+//OUPUT
+3.21
+
+Mode
+
+The mode value is the value that appears the most number of times
+
+R does not have a function to calculuat the mode, however we cna create our own function to find
+it.
+
+If we take a look at the values of the wt variable ( from the mtcars data set ) , we will see that the
+numbers 3.44 are often shown
+
+Instead of counting it ourselves, we can use the following code to find the mode
+
+Data_Cars <- mtcars
+Names(sort(-table(Data_Cars$wt))) [1]
