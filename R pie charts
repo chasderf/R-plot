@@ -1,0 +1,40 @@
+A pie chart is a circular graph to view data
+
+Use the pie ( ) function to draw pie charts
+
+Bitmap(file=“out.png”)
+X <- c(10,20,40)
+Pie(x)
+
+Note: the size of each pie is determined by comparing the value with all the other values, by using
+this formula
+
+The value divided by the sum and all values: x/sum(x)
+
+Start angle
+You can change the start angle of the pie chart with the init.angle parameter
+The value of init.angle is defined with angle in degrees, where default angle is 0
+
+x <- c(10,20,30,50)
+Pie(x, init.angle = 90)
+
+Labels and header
+
+Use the label parameter to add a label to the pie chart, and use the main parameter to add a header
+
+X <- c(10,20,30,50)
+
+Mylabel <- c(“Apple”, “Banana”, “Cherries”, “Dates”)
+
+Pie(x, label = mylabel, main = “Fruits”)
+
+Legend
+
+To add a list of explanation for each pie, use the legend( ) function :
+
+Bitmap(file=“out.png”)
+X<- c(vectors)
+
+Legend ( “bottomright”, mylabel, fill = colors )
+
+It creates a table/legend with the objects/vectors with their label/name and the color dynamic
