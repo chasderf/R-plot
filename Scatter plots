@@ -1,0 +1,25 @@
+Scatter plots
+You learned form the plot chapter that the plot ( ). Function is used to plot numbers against each
+other
+
+A “scatter plot” is a type of plot used to display the relationship between two numerical variables,
+and plots one dot for each observation
+
+It needs two vectors of same length, one for the x-axis (horizontal ) and one for the y-axis (vertical):
+
+X <- c(5, 7, 8 , 12)
+Y <- c(99, 87, 48, 55)
+
+Plot (x, y )
+
+-=================================================================
+X <- c(5, 7, 8 , 12)
+Y <- c(99, 87, 48, 55)
+
+Plot (x, y, main = “Observation of Cars”, xlab = “Car Age”, ylab = “Car Speed” )
+
+This makes our graph look a lot cooler with y/x axis
+
+Compare plots
+
+To compare the plot with another plot, use the points ( ) function
